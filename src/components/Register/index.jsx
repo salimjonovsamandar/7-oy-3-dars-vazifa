@@ -133,10 +133,10 @@ function Register() {
                         clientId={id}
                         className='google'
                         cookiePolicy={"single_host_origin"}
-                        // isSignedIn={true}
+                        isSignedIn={true}
                         onSuccess={responseGoogle}
-                        onFailure={responseGoogle}
-                        // onFailure={responseGoogleFailure}
+                        onFailure={responseGoogleFailure}
+                       
                     />
                 </div>
             </form>
