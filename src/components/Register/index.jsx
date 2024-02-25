@@ -20,7 +20,6 @@ function Register() {
 
     function responseGoogleFailure(error) {
         console.error('Google login failed', error);
-
     }
 
     function validate(usernameRef, emailRef, passwordRef) {
@@ -134,9 +133,10 @@ function Register() {
                         clientId={id}
                         className='google'
                         cookiePolicy={"single_host_origin"}
-                        isSignedIn={true}
+                        // isSignedIn={true}
                         onSuccess={responseGoogle}
-                        onFailure={responseGoogleFailure}
+                        onFailure={responseGoogle}
+                        // onFailure={responseGoogleFailure}
                     />
                 </div>
             </form>
