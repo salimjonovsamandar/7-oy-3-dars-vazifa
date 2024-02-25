@@ -1,0 +1,27 @@
+.content {
+  text-align: center;
+}
+.h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #ff0000;
+  opacity: 0.6;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 150px;
+  margin-top: 70px;
+  font-family: cursive;
+}
+.a {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 300;
+  border: 3px solid #ff0000;
+  border-radius: 4px;
+  color: #ff0000;
+  margin: 15px 0;
+  padding: 8px 14px;
+  text-decoration: none;
+  opacity: 0.6;
+}
