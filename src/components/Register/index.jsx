@@ -3,9 +3,8 @@ import "../Register/index.css"
 import { NavLink, useNavigate } from 'react-router-dom'
 import { useRef } from 'react'
 import GoogleLogin from 'react-google-login'
-import { GoogleLoginButton } from 'react-social-login-buttons'
 
-const id = "95172988738-9fgrp6pqt54b5i7skt47gl05i8e2pjnf.apps.googleusercontent.com"
+const id = "751062961176-4rrajld1pagnv7dvv77id2h8m1ms39su.apps.googleusercontent.com"
 
 function Register() {
     const usernameRef = useRef()
@@ -103,7 +102,6 @@ function Register() {
     }
 
 
-
     return (
         <div className='wrapper'>
             <form className="form">
@@ -136,7 +134,7 @@ function Register() {
                         isSignedIn={true}
                         onSuccess={responseGoogle}
                         onFailure={responseGoogleFailure}
-                       
+
                     />
                 </div>
             </form>
