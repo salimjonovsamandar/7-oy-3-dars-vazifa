@@ -4,7 +4,7 @@ import { NavLink, useNavigate } from 'react-router-dom'
 import { useRef } from 'react'
 import GoogleLogin from 'react-google-login'
 
-const id = "751062961176-4rrajld1pagnv7dvv77id2h8m1ms39su.apps.googleusercontent.com"
+// const id = "751062961176-4rrajld1pagnv7dvv77id2h8m1ms39su.apps.googleusercontent.com"
 
 function Register() {
     const usernameRef = useRef()
@@ -12,14 +12,14 @@ function Register() {
     const passwordRef = useRef()
     const navigate = useNavigate()
 
-    function responseGoogle(response) {
-        console.log('Google login successful', response);
-        navigate("/home")
-    }
+    // function responseGoogle(response) {
+    //     console.log('Google login successful', response);
+    //     navigate("/home")
+    // }
 
-    function responseGoogleFailure(error) {
-        console.error('Google login failed', error);
-    }
+    // function responseGoogleFailure(error) {
+    //     console.error('Google login failed', error);
+    // }
 
     function validate(usernameRef, emailRef, passwordRef) {
         if (!usernameRef.current.value) {
@@ -128,12 +128,12 @@ function Register() {
                 <div className="flex-row">
                     {/* <button onClick={googleClick} className="btn google"><svg width={20} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" /></svg> Google</button> */}
                     <GoogleLogin
-                        clientId={id}
-                        className='google'
-                        cookiePolicy={"single_host_origin"}
-                        isSignedIn={true}
-                        onSuccess={responseGoogle}
-                        onFailure={responseGoogleFailure}
+                    // clientId={id}
+                    // className='google'
+                    // cookiePolicy={"single_host_origin"}
+                    // isSignedIn={true}
+                    // onSuccess={responseGoogle}
+                    // onFailure={responseGoogleFailure}
 
                     />
                 </div>

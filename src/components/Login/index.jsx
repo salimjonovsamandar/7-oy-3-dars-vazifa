@@ -6,7 +6,6 @@ import { useRef } from 'react'
 function Login() {
 
     const usernameRef = useRef()
-    const emailRef = useRef()
     const passwordRef = useRef()
     const navigate = useNavigate()
 
@@ -56,11 +55,11 @@ function Login() {
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data);
-                    if (data.id) {
-                        localStorage.setItem("accessToken", data.accessToken)
-                        localStorage.setItem("user", JSON.stringify(data))
-                    }
+                    // console.log(data);
+                    // if (data.id) {
+                    //     localStorage.setItem("accessToken", data.accessToken)
+                    //     localStorage.setItem("user", JSON.stringify(data))
+                    // }
                     navigate("/home")
                 })
                 .catch(err => {
